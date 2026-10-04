@@ -1,0 +1,1390 @@
+*{margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20%;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+     position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: white;
+  animation: move 30s   infinite ;
+}
+@keyframes move{
+    0%{
+        background-color: transparent;
+    }
+    15%{
+        background-color: white;
+    }
+}
+.nav .firstnav a:hover{
+    color: #f4623a;
+}
+.nav .secondnav a:hover{
+    color: #f4623a;
+}
+.firstnav a{
+    text-decoration: none;
+    color: black;
+     font-family: "Alegreya";
+    font-weight: 600;
+    font-size: 35px;
+     
+}
+.secondnav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+.secondnav ul a{
+text-decoration: none;
+font-family: "Alegreya Sans";
+ font-weight: 600;
+    font-size: 20px;
+    color: black;
+   
+
+}
+.header{
+background-image: url("photo_2026-07-23_12-23-41.jpg");
+     background-size: cover;
+     background-position: center center;
+     height: 100vh;
+     overflow: hidden;
+     display: flex;
+     justify-content:center;
+     align-items:center;
+     width: 100%;
+     position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgba(92, 77, 66, 0.5);
+    z-index: 1;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+.head h1{
+    
+    font-family: "Alegreya";
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+     text-align: center;
+    font-weight: 300;
+    font-size: 60px;
+    margin-top: 48px;
+   width: 50%;
+}
+.header .head p::before{
+    content: "";
+    position: absolute;
+    width:100px;
+    right: 45%;
+    height: 3px; 
+    top: 30%;
+    background-color:#f4623a;
+    margin-bottom: 48px;
+}
+.head p{
+     position: relative;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.767);
+    padding-top: 48px;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    font-family: "Alegreya Sans";
+}
+ .head button{
+    margin: 48px;
+    padding: 20px 30px;
+    border-radius: 60px;
+    font-size: 15px;
+    font-weight: 300;
+     background-color: #f4623a; 
+    color: white;
+    border: none;
+    font-family: "Alegreya Sans";
+}
+
+.head button:hover{
+     background-color: #ee8a6f; 
+    
+}
+
+
+.orange{
+    background-color: #f4623a;
+    
+}
+.arange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.arange h2{
+    margin-top: 48px;
+    padding-top: 48px;
+    text-align: center;
+    font-family: "Alegreya";
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 40px;
+
+}
+.arange p{
+    color: white;
+    
+    padding-top: 48px;
+    position: relative;
+    text-align: center;
+    width: 56%;
+   font-family: "Alegreya Sans";
+
+      font-weight: 300;
+    font-size: 20px;
+
+}
+.arange p::before{
+    content: "";
+    position: absolute;
+    width:100px;
+    right: 45%;
+    height: 3px; 
+    top:20%;
+    background-color:white;
+    margin-bottom: 48px;
+
+}
+.arange button{
+    color: white;
+    margin: 48px;
+    
+        margin: 48px;
+    padding: 20px 30px;
+border-radius: 60px;
+font-size: 15px;
+font-weight: 400;
+
+ font-family: "Alegreya Sans";
+background-color: white;
+border-color: white;
+color: black;
+}
+.arange button:hover{
+background-color:#636363;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 48px;
+}
+.icons-service ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;
+    margin: 48px;
+}
+.icons-service ul li{
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    flex-direction: column;
+    gap: px;
+}
+.icons-service li:hover{
+transform: scale(1.2,1.2);
+transition-duration: 1s;
+}
+
+
+.service h2::after{
+       content: "";
+    position: absolute;
+    width:80px;
+    right: 35%;
+    height: 4px; 
+    top: 120%;
+    background-color:#f4623a;
+    margin-bottom: 48px;
+}
+.service h2{
+    position: relative;
+    padding-top: 38px;
+    text-align: center;
+    font-family: "Alegreya";
+    font-weight: 500;
+    font-weight: 500;
+    font-size: 40px;
+
+}
+.icons-service ul li p{
+    text-align: center;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    font-size: 20px;
+    color: #636363;
+}
+.icons-service ul li h3{
+  padding-top: 38px;
+    text-align: center;
+    font-family: "Alegreya";
+    font-weight: 500;
+    font-weight: 300;
+    font-size: 30px;
+}
+.icons-service i{
+    font-size: 40px;
+    color: #f4623a;
+}
+
+
+.gallery{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:0;
+    padding: 0;
+    margin: 0;
+   
+    
+}
+.card{
+    width: 33.3%;
+    position: relative;
+    display: flex;
+}
+.card img{
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    opacity: 0;
+    flex-direction: column;
+}
+.overlay:hover{
+    opacity: 0.9;
+    background-color: #f4623a;
+    transition: 1s;
+}
+.overlay p{
+color: #d0cccc;
+font-family: "Alegreya Sans";
+    font-weight: 400;
+    font-size: 20px;
+}
+.overlay h3{
+    color: white;
+    font-family: "Alegreya";
+    font-weight: 500;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+.douwnnn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(33, 37, 41, 1);
+}
+.douwnnn h2{
+    padding: 48px;
+    font-family: "Alegreya";
+    font-weight: 500;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+}
+.douwnnn button{
+    margin-top: 0;
+    margin-bottom: 48px;
+      padding: 20px 30px;
+border-radius: 60px;
+font-size: 15px;
+font-weight: 540;
+border-color: white;
+}
+.douwnnn button:hover{
+background-color: #d0cccc;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 48px;
+    margin: 48px;
+}
+.formmm{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 48px;
+    
+}
+form{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+form label{
+    padding: 10px;
+    
+}
+form input{
+    width: 500px;
+    height: 55px;
+    padding-left: 10px;
+    border-color:#d0cccc;
+}
+
+form .message{
+    width: 500px;
+    height:200px ;
+    padding-bottom:48px ;
+    margin-bottom: 48px;
+}
+
+input:focus,
+textarea:focus{
+    box-shadow:0px 0px 10px #f4623aa2;
+    outline: none;
+}
+.icbu{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.icbu i{
+    font-size: 30px;
+    color: #636363;
+}
+.icbu a{
+
+text-decoration: none;
+
+font-size:20px ;
+}
+form button{
+        margin-bottom:30px ;
+    padding: 20px 220px;
+border-radius: 60px;
+font-size: 20px;
+font-weight: 400;
+background-color: rgb(245, 124, 90);
+color: white;
+border-color: rgb(245, 124, 90);
+ font-family: "Alegreya Sans";
+}
+.formmm h2{
+    position: relative;
+     font-family: "Alegreya";
+    font-weight: 500;
+    font-weight: 600;
+    font-size: 40px;
+}
+.formmm p{
+    padding-top: 30px;
+    text-align: center;
+    width: 60%;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    font-size: 20px;
+    color: #636363;
+}
+.formmm h2::after{
+       content: "";
+    position: absolute;
+    width:80px;
+    right: 35%;
+    height: 4px; 
+    top: 120%;
+    background-color:#f4623a;
+    margin-bottom: 48px;
+}
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    background-color:#dee2e6;
+}
+
+
+/* Mobile
+@media (max-width: 767px) {
+.nav{
+    padding:28px;
+    
+}
+.header .head p::before{
+    right: 40%;
+}
+.head{
+    padding: 10px;
+}
+.arange p::before{
+    right: 40%;
+}
+.service .icons-service ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.service .icons-service li{
+    width: 100%;
+    text-align: center;
+    padding-right: 20px;
+display: flex;
+gap: 10px;
+
+}
+.service {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.service h2{
+    padding-left: 10%;
+}
+.service h2::after{
+    right: 29%;
+}
+.img{
+    width: 100%;
+}
+.gallery{
+         display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.gallery .card{
+    width: 100%;
+}
+.form{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+} */
+
+
+
+/* ========================================
+   RESPONSIVE MEDIA QUERIES
+   ======================================== */
+
+
+/* ================================
+   EXTRA SMALL MOBILE
+   320px - 479px
+   ================================ */
+@media (max-width: 479px) {
+
+    /* NAVBAR */
+    .nav {
+        height: auto;
+        min-height: 75px;
+        padding: 15px 12px;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .firstnav a {
+        font-size: 25px;
+    }
+
+    .secondnav ul {
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .secondnav ul a {
+        font-size: 13px;
+    }
+
+
+    /* HEADER */
+    .header {
+        min-height: 100vh;
+        height: auto;
+        padding: 100px 15px 50px;
+    }
+
+    .head {
+        width: 100%;
+        padding: 0;
+    }
+
+    .head h1 {
+        width: 100%;
+        font-size: 38px;
+        line-height: 1.2;
+        margin-top: 20px;
+    }
+
+    .head p {
+        width: 95%;
+        font-size: 16px;
+        line-height: 1.6;
+        padding-top: 40px;
+    }
+
+    .header .head p::before {
+        width: 60px;
+        height: 3px;
+        right: calc(50% - 30px);
+        top: 10%;
+    }
+
+    .head button {
+        margin: 35px 0;
+        padding: 16px 25px;
+        font-size: 14px;
+    }
+
+
+    /* ORANGE SECTION */
+    .orange {
+        padding: 20px 15px;
+    }
+
+    .arange h2 {
+        font-size: 30px;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .arange p {
+        width: 95%;
+        font-size: 16px;
+        line-height: 1.7;
+        padding-top: 40px;
+    }
+
+    .arange p::before {
+        width: 60px;
+        right: calc(50% - 30px);
+        top: 8%;
+    }
+
+    .arange button {
+        margin: 35px 0;
+        padding: 16px 25px;
+    }
+
+
+    /* SERVICES */
+    .service {
+        margin: 30px 15px;
+        gap: 15px;
+    }
+
+    .service h2 {
+        font-size: 30px;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+
+    .service h2::after {
+        width: 60px;
+        right: calc(50% - 30px);
+        top: 120%;
+    }
+
+    .icons-service ul {
+        flex-direction: column;
+        gap: 40px;
+        margin: 35px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .icons-service ul li {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .icons-service i {
+        font-size: 35px;
+    }
+
+    .icons-service ul li h3 {
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    .icons-service ul li p {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+
+    /* GALLERY */
+    .gallery {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .gallery .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        display: block;
+    }
+
+    .overlay p {
+        font-size: 16px;
+    }
+
+    .overlay h3 {
+        font-size: 18px;
+    }
+
+
+    /* DOWNLOAD SECTION */
+    .douwnnn {
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .douwnnn h2 {
+        font-size: 28px;
+        padding: 35px 10px;
+        line-height: 1.4;
+    }
+
+    .douwnnn button {
+        padding: 16px 25px;
+        margin-bottom: 30px;
+    }
+
+
+    /* CONTACT */
+    .form {
+        margin: 20px 10px;
+        padding: 25px 10px;
+    }
+
+    .formmm {
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    .formmm h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .formmm h2::after {
+        width: 60px;
+        right: calc(50% - 30px);
+    }
+
+    .formmm p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        padding-top: 25px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input,
+    form .message {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    form input {
+        height: 50px;
+    }
+
+    form .message {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    form button {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    .icbu a {
+        font-size: 16px;
+        text-align: center;
+    }
+    /* FOOTER */
+    footer {
+        padding: 30px 15px;
+        text-align: center;
+    }
+}
+
+
+/* ================================
+   SMALL MOBILE
+   480px - 575px
+   ================================ */
+@media (min-width: 480px) and (max-width: 575px) {
+
+    .nav {
+        height: 75px;
+        padding: 15px 20px;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .firstnav a {
+        font-size: 28px;
+    }
+
+    .secondnav ul {
+        gap: 15px;
+    }
+
+    .secondnav ul a {
+        font-size: 15px;
+    }
+
+
+    .header {
+        min-height: 100vh;
+        height: auto;
+        padding: 100px 20px 50px;
+    }
+
+    .head h1 {
+        width: 90%;
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    .head p {
+        width: 90%;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .header .head p::before {
+        width: 70px;
+        right: calc(50% - 35px);
+    }
+
+
+    .arange {
+        padding: 0 20px;
+    }
+
+    .arange h2 {
+        font-size: 34px;
+    }
+
+    .arange p {
+        width: 90%;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .arange p::before {
+        width: 70px;
+        right: calc(50% - 35px);
+    }
+
+
+    .service {
+        margin: 35px 20px;
+    }
+
+    .service h2 {
+        font-size: 34px;
+    }
+
+    .service h2::after {
+        width: 70px;
+        right: calc(50% - 35px);
+    }
+
+    .icons-service ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 45px;
+        margin: 40px 0;
+    }
+
+    .icons-service ul li {
+        width: 100%;
+    }
+
+    .icons-service ul li h3 {
+        font-size: 27px;
+    }
+
+    .icons-service ul li p {
+        font-size: 17px;
+    }
+
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery .card {
+        width: 100%;
+    }
+
+
+    .douwnnn h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+
+    .form {
+        margin: 30px 20px;
+        padding: 30px 15px;
+    }
+
+    .formmm {
+        padding: 25px 10px;
+        width: 100%;
+    }
+
+    .formmm h2 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .formmm h2::after {
+        width: 70px;
+        right: calc(50% - 35px);
+    }
+
+    .formmm p {
+        width: 95%;
+        font-size: 17px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input,
+    form .message {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+        padding: 18px 20px;
+    }
+}
+
+
+/* ================================
+   TABLET
+   576px - 767px
+   ================================ */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .nav {
+        height: 80px;
+        padding: 15px 30px;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .firstnav a {
+        font-size: 30px;
+    }
+
+    .secondnav ul {
+        gap: 20px;
+    }
+
+    .secondnav ul a {
+        font-size: 16px;
+    }
+
+
+    .header {
+        min-height: 100vh;
+        height: auto;
+        padding: 100px 30px 60px;
+    }
+
+    .head h1 {
+        width: 85%;
+        font-size: 50px;
+    }
+
+    .head p {
+        width: 80%;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .header .head p::before {
+        width: 80px;
+        right: calc(50% - 40px);
+    }
+
+
+    .arange {
+        padding: 0 30px;
+    }
+
+    .arange h2 {
+        font-size: 36px;
+    }
+
+    .arange p {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .arange p::before {
+        width: 80px;
+        right: calc(50% - 40px);
+    }
+
+
+    .service {
+        margin: 40px 30px;
+    }
+
+    .service h2 {
+        font-size: 36px;
+    }
+
+    .service h2::after {
+        width: 75px;
+        right: calc(50% - 37.5px);
+    }
+
+    .icons-service ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+        margin: 45px 0;
+    }
+
+    .icons-service ul li {
+        width: 80%;
+    }
+
+
+    .gallery {
+        flex-direction: row;
+    }
+
+    .gallery .card {
+        width: 50%;
+    }
+
+
+    .douwnnn h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+
+    .form {
+        margin: 40px 30px;
+        padding: 35px 20px;
+    }
+
+    .formmm {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .formmm h2 {
+        font-size: 36px;
+    }
+
+    .formmm h2::after {
+        width: 75px;
+        right: calc(50% - 37.5px);
+    }
+
+    .formmm p {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    form input,
+    form .message {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+        padding: 18px 30px;
+    }
+}
+
+
+/* ================================
+   TABLET / SMALL LAPTOP
+   768px - 991px
+   ================================ */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .nav {
+        height: 85px;
+        padding: 15px 40px;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .firstnav a {
+        font-size: 32px;
+    }
+
+    .secondnav ul {
+        gap: 25px;
+    }
+
+    .secondnav ul a {
+        font-size: 17px;
+    }
+
+
+    .head h1 {
+        width: 70%;
+        font-size: 52px;
+    }
+
+    .head p {
+        width: 70%;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .header .head p::before {
+        width: 80px;
+        right: calc(50% - 40px);
+    }
+
+
+    .arange p {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .arange p::before {
+        width: 80px;
+        right: calc(50% - 40px);
+    }
+
+
+    .service {
+        margin: 45px 30px;
+    }
+
+    .service h2 {
+        font-size: 38px;
+    }
+
+    .service h2::after {
+        right: calc(50% - 40px);
+    }
+
+    .icons-service ul {
+        gap: 20px;
+        margin: 45px 0;
+    }
+
+    .icons-service ul li {
+        width: 23%;
+    }
+
+    .icons-service ul li h3 {
+        font-size: 25px;
+    }
+
+    .icons-service ul li p {
+        font-size: 17px;
+    }
+
+
+    .gallery .card {
+        width: 33.333%;
+    }
+
+
+    .douwnnn h2 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+
+    .form {
+        margin: 40px 30px;
+        padding: 40px 20px;
+    }
+
+    .formmm h2 {
+        font-size: 38px;
+    }
+
+    .formmm h2::after {
+        right: calc(50% - 40px);
+    }
+
+    .formmm p {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    form input,
+    form .message {
+        width: 500px;
+        max-width: 90vw;
+    }
+
+    form button {
+        width: 500px;
+        max-width: 90vw;
+        padding: 18px 30px;
+    }
+}
+
+
+/* ================================
+   LAPTOP / DESKTOP
+   992px - 1199px
+   ================================ */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .nav {
+        padding: 0 40px;
+        gap: 10%;
+    }
+
+    .firstnav a {
+        font-size: 32px;
+    }
+
+    .secondnav ul {
+        gap: 35px;
+    }
+
+    .secondnav ul a {
+        font-size: 18px;
+    }
+
+
+    .head h1 {
+        width: 60%;
+        font-size: 55px;
+    }
+
+    .head p {
+        width: 65%;
+        font-size: 19px;
+    }
+
+
+    .arange p {
+        width: 65%;
+    }
+
+
+    .icons-service ul {
+        gap: 25px;
+    }
+
+    .icons-service ul li {
+        width: 22%;
+    }
+
+
+    .gallery .card {
+        width: 33.333%;
+    }
+
+
+    .formmm p {
+        width: 65%;
+    }
+}
+
+
+/* ================================
+   LARGE DESKTOP
+   1200px - 1399px
+   ================================ */
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .nav {
+        padding: 0 50px;
+        gap: 12%;
+    }
+
+    .head h1 {
+        width: 55%;
+        font-size: 58px;
+    }
+
+    .head p {
+        width: 60%;
+    }
+
+    .arange p {
+        width: 58%;
+    }
+
+    .icons-service ul {
+        gap: 30px;
+    }
+
+    .gallery .card {
+        width: 33.333%;
+    }
+
+    .formmm p {
+        width: 60%;
+    }
+}
+
+
+/* ================================
+   EXTRA LARGE DESKTOP
+   1400px+
+   ================================ */
+@media (min-width: 1400px) {
+
+    .nav {
+        padding: 0 60px;
+        gap: 15%;
+    }
+
+    .firstnav a {
+        font-size: 35px;
+    }
+
+    .secondnav ul {
+        gap: 50px;
+    }
+
+    .secondnav ul a {
+        font-size: 20px;
+    }
+
+
+    .head h1 {
+        width: 50%;
+        font-size: 60px;
+    }
+
+    .head p {
+        width: 60%;
+        font-size: 20px;
+    }
+
+    .arange p {
+        width: 56%;
+        font-size: 20px;
+    }
+
+
+    .icons-service ul {
+        gap: 30px;
+    }
+
+    .icons-service ul li {
+        width: 20%;
+    }
+
+
+    .gallery .card {
+        width: 33.333%;
+    }
+
+
+    .formmm p {
+        width: 60%;
+    }
+}
